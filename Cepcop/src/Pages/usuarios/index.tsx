@@ -1,14 +1,15 @@
-import { Card, Container } from './styles'
+import { Container } from './styles'
 
 import Logo from '../../assets/logo.png'
 import { NavLink } from 'react-router-dom'
+import { CardContainer } from '../../components/Card/styles'
 
 export function Usuarios() {
   return (
     <main>
       <Container>
         <img src={Logo} alt="" />
-        <Card>
+        <CardContainer>
           <h3>Novo Usuário</h3>
           <button>
             <NavLink to="/user/cadastro">Fazer Cadastro</NavLink>
@@ -18,7 +19,7 @@ export function Usuarios() {
           <button>
             <NavLink to="/user/login">Ver Agendamento</NavLink>
           </button>
-        </Card>
+        </CardContainer>
       </Container>
     </main>
   )

@@ -7,10 +7,10 @@ import { CadastroUsuario } from './Pages/usuarios/cadastroUsuario'
 export function Router() {
   return (
     <Routes>
-      <Route path="/user" element={<Usuarios />}>
-        <Route path="/cadastro" element={<CadastroUsuario />} />
-        <Route path="/login" element={<FormLogin />} />
-      </Route>
+      <Route path="/user" element={<Usuarios />} />
+      <Route path="/user/cadastro" element={<CadastroUsuario />} />
+      <Route path="/user/login" element={<FormLogin />} />
+
       <Route path="/admin" element={<Administradores />} />
     </Routes>
   )

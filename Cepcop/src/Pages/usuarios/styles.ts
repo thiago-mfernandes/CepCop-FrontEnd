@@ -11,43 +11,37 @@ export const Container = styled.section`
     width: 35%;
     margin: 0 auto 1.8rem;
   }
-`
 
-export const Card = styled.div`
-  background-color: ${(props) => props.theme.branco};
-  border-radius: 8px;
-  padding: 1.25rem;
-  box-shadow: ${(props) => props.theme.boxShadow};
-  height: max-content;
-
-  hr {
-    margin-bottom: 1.5rem;
-    color: ${(props) => props.theme.texto};
-    opacity: 0.2;
-    width: 100%;
-  }
-
-  h3 {
-    margin-bottom: 0.5rem;
-    color: ${(props) => props.theme.texto};
-    font-size: 1rem;
-    font-weight: 300;
-  }
-
-  button {
-    background-color: ${(props) => props.theme.azulPrimario};
-    border: 0;
-    border-radius: 4px;
-    width: 100%;
-    height: 2rem;
-    margin-bottom: 2rem;
-    &:active {
-      opacity: 0.7;
+  div {
+    hr {
+      margin-bottom: 1.5rem;
+      color: ${(props) => props.theme.texto};
+      opacity: 0.2;
+      width: 100%;
     }
 
-    a {
-      text-decoration: none;
-      color: ${(props) => props.theme.branco};
+    h3 {
+      margin-bottom: 0.5rem;
+      color: ${(props) => props.theme.texto};
+      font-size: 1rem;
+      font-weight: 300;
+    }
+
+    button {
+      background-color: ${(props) => props.theme.azulPrimario};
+      border: 0;
+      border-radius: 4px;
+      width: 100%;
+      height: 2rem;
+      margin-bottom: 2rem;
+      &:active {
+        opacity: 0.7;
+      }
+
+      a {
+        text-decoration: none;
+        color: ${(props) => props.theme.branco};
+      }
     }
   }
 `
